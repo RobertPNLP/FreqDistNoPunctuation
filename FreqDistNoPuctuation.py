@@ -7,7 +7,7 @@ def topTenSortedFDist(wikiArtical):
     
     tokWord_summary = word_tokenize(wiki.summary(wikiArtical))
     noPunctuation_summary = list()
-    Punctuation = ['.',',','"','?',';',':','}','{','(',')']
+    Punctuation = ['.',',','"','?',';',':','}','{','(',')','!','@','#']
     for i in range(0,len(tokWord_summary)):
         if tokWord_summary[i] in Punctuation:
             pass
