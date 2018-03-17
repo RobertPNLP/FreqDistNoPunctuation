@@ -18,10 +18,6 @@ def topTenSortedFDist(wikiArtical):
 
     # https://stackoverflow.com/questions/613183/how-do-i-sort-a-dictionary-by-value
     sorted_fDist = sorted(fDist.items(), key=operator.itemgetter(1))
-   
-
-    topTen = sorted_fDist[-10:]
-
-    topTen.reverse() # sorted in-place
+    sorted_fDist.reverse() # sorted in-place
     
-    return(topTen)
+    return(sorted_fDist)
