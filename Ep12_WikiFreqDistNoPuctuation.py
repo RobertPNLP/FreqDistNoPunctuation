@@ -3,7 +3,7 @@ from nltk.tokenize import word_tokenize
 import wikipedia as wiki
 import operator
 
-def topTenSortedFDist(wikiArtical):
+def getFreqDist(wikiArtical):
     
     tokWord_summary = word_tokenize(wiki.summary(wikiArtical))
     noPunctuation_summary = list()
