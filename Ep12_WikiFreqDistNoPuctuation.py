@@ -22,4 +22,4 @@ def getFreqDist(wikiArtical):
     sorted_fDist = sorted(fDist.items(), key=operator.itemgetter(1))
     sorted_fDist.reverse() # sorted in-place
     
-    return(sorted_fDist
+    return(sorted_fDist)
